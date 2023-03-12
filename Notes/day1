@@ -1,0 +1,125 @@
+Git: (Version control system)
+
+-->To track changes
+-->Undo changes
+-->comapre versions
+-->work with others
+
+git is free and opensource, we can download in our computer
+git is completly free locally, and use it to track changes on your local files on your own computer
+
+***====>However if you want  to host your code on the internet, its typically easier to use a hosting service like github
+ github owned by microsoft
+ allows you to have versions of your code "live" on the internet-->for you and for others
+ -->to access
+ -->to update
+ -->change from any machine
+ 
+ 
+ github Vs git
+ 
+ git: opensource VCS software
+ github:company that offers a service for hosting files on the internet that are managed using git
+ 
+ github is the online hosting provider, that can acts as a machine connected to our local system via internet and host the code repository for us
+ 
+ finally git allows you to save points to your work, create changes, update existing code, undo changes, create brances for others to work and merge work together
+ 
+ 
+ Git or git
+ 
+ Git:typically refers to entire project
+ git: is the actual program used
+ 
+ there has been deeper integration between github and microsoft products -->including connecting to github directly within visual studio code,a code editor tool from microsoft
+ 
+ Github features:
+  -->graphical interfaces of many git features
+  -->An online hosted repository also provides an ideal connection point between  everyone working on the same project.
+  
+  
+Steps:-
+=====
+
+1.install git in respective os
+2.Create github account free tier one
+3.install github desktop and vs code
+
+4.configure github
+  to check current configuration with commands
+  git config user.name
+  git config user.email
+  
+  To set configuration ,commands will been
+  git config --global user.name "sravanthi3012"
+  git config --global user.email "gantasravanthi09@gmail.com"
+  
+  
+  
+  
+Repository:the main place we track changes and manage our files that are using git is called a repository
+
+Starting with git:
+------------------
+git init :this command initilizes a git repository in your local machine -- you only need to run once per project
+
+Upon creating a repository with git init , you will create a hidden .git file -- that manages the versioning of the files inside the git repository.
+ means upon creating a git repository, all the folders/directories inside the top leavel git repository also be tracked.
+ 
+we can also use the graphical user interface with github desktop or even we can create a new repository online at www.github.com 
+-- Then we can git clone this repository to our local machine
+
+git status :this command will report back status of your repository
+
+
+Tasks:
+1.create our first local git repository at the command line
+git init
+2.then we will create repository in github  and use git clone  to clone it to our local computer
+
+for that you need to setup some tokens in order to clone private repositories 
+ 
+ 
+Private Repositories and tokens:
+================================
+
+We can easily clone other public repositories with the git clone command and then https url for public repository.
+Now explore hoe to deal with private repositories we wish to clone
+
+option1: command line :
+		create personal access tokens(PAT) on github.com
+		when using git clone command reference the PAT.
+		
+		profile--settings--developer settings -- personal access tokens -- generate new token -- provide password  --fill all parameters --generate token --copy the token to some file--it will be visble once 
+
+clone syntax with PAT
+git clone https://token(PAT)@github.com/account/repo.git
+privisouly : git clone https://github.com/account/repo.git
+		
+		
+		
+option2: Github desktop tool gui
+		open the github desktop tool gui:login with username and pw
+		clone repo via gui
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
