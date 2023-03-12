@@ -1,0 +1,65 @@
+BASIC GIT USAGE:
+=================
+
+
+*Git work flow
+
+*How to tell Git about the changes to our code
+
+*How to push changes to Github
+
+*How to pull changes from changes from Github
+
+
+git status to make sure that directory we were working in wasn't already a github repository.
+
+
+Theory-----Recall our discussions on Day Zero where we had an initial project, we added some code and then maybe add more code to that.
+And we describe those as kind of these save points or check points.-->In reality, we should be thinking of these as commits, and that's the language of Git.
+And this commit is when we've informed get itself about specific changes to files and we've committed this to the dot git file that's inside the repository.
+And remember, we can always go back to a previous commit so you can go back to a previous commit.
+
+Keep in mind, a git commit doesn't just pertain to saving changes in a single file.It can constitute specific changes across an entire working directory.
+So it has to do with everything inside the working directory and you can't add in program dot py indexed, HTML style, CSS, all these different files you add them, create changes to them.
+It's not like the same thing of clicking save on a simple Excel spreadsheet.
+
+You can actually track specific changes to only certain files within your working directory.
+You don't need to track all the changes at once and you don't need to track just changes in a single file-->You can pick and choose.
+
+
+Practical-----Well, you already know that you run git init within a specific directory to create your repository.And in fact, let's call this our working directory.
+The working directory is a directory We're actually coding, adding files into etc. and then maybe you decide to add a python file like program
+
+PI to this working directory because maybe you're working on like a django website.And as you develop your website, you also add in some indexed HTML files changes there as well as the style CSS stylesheet file
+Now is this actually part of the repository while it's in the working directory?---And it kind of looks like it's part of the repository, you technically haven't told Git that you want to actually commit these files to the repository.
+So if you try to push your repository from your local machine to GitHub without running things like git add or git commit, then nothing would actually be changed on GitHub.
+So how do we actually tell git that I want to commit my changes that I've done in my working directory to the repository?
+
+
+Well, this is where we introduce the concept of a staging area.What we end up doing is the changes that we perform in the working directory.We add them to the staging area.
+So you do this by running git add, and then the particular files you're interested in..So we're right now just adding program dot py to our staging area.
+It's technically not yet part of the repository.It's just telling it that, hey, get ready to commit this.I've added it to the staging area.
+Now that we have this in the staging area, we can commit it so that it's part of the repository so we can run, git, commit to take everything in the staging area and then actually commit it to the repository
+And now you're basically telling Git to add these changes to the git log file.And keep in mind when you typically commit, you want to do it with a message that way in your logs you understand what changes you did when you committed this from the staging area.
+So for example, you could run something like git commit -m "for message and then say python code."So then in your repository when you committed this, it's also going to log your message there
+And that's a message for everyone to read, understanding that those particular changes had to do with paticular msg.
+
+And you probably want to do something a little better than just Python code.Maybe it could be like I started the program, whatever.Obviously, if you're doing this as a sole developer, you have a lot of leeway on what kind of messages you want to write yourself.I always say, be kind to your future self.
+
+You want to try to be as descriptive as possible in a way that if you're looking back on this a yearfrom now, you don't start scratching your head thinking, What did I mean by Python code or What did
+And if you wanted to then continue this process for other files in your working directory or other changes,
+
+So for example, you could say get add dots to add all the files technically in a working directory that were changed to the staging area.And this is, this is not just for adding files, it's also for changes within a file or changes within 
+a directory.So just because something's in your working directory doesn't technically mean it's in your repository.
+It's not until you added it to the staging area and then committed it to the repository that it becomes part of the repository in the sense that you can push it to your online hosting service like GitHub.
+So now that we have this in the repository we end up doing is taking a repository and then pushing it to GitHub.And now your repository can live on GitHub.
+
+So let's imagine you're dealing with a different situation where now instead of your desktop computer,you're on your laptop and I've denoted this by like a green marker around your working directory and on your laptop.
+You only have the python file you were working on, but you don't have those new site files.So what you need to do in this case is connect to GitHub and then you do what's known as a git pull.
+So previously it was a git push to push it to GitHub.And then in the simple case, you simply say get pull and it's going to pull those changes that you're not caught up with.And keep in mind, again, we're doing everything with a simple branch and you may have changes or differences
+
+
+
+
+
+
